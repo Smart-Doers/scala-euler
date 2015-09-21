@@ -16,6 +16,7 @@ object EulerProblem2 extends App{
 
   def findNextFibNumber(first:Int,second:Int):Stream[Int] = {
     first #:: findNextFibNumber(second,first+second)
+    //#:: one way to create stream
   }
 
 }
