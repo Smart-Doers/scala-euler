@@ -1,2 +1,2 @@
 # scala-euler
-Repository to learn scala.
+Project euler in scala
