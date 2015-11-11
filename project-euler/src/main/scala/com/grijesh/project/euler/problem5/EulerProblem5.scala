@@ -9,7 +9,7 @@ import com.grijesh.project.euler.Utility
  */
 object EulerProblem5 extends App{
 
- println(Utility.time(Range.apply(1,20).foldLeft(1L)((a,b) => lcm(a,b))))
+ println(Utility.time((1 to 20).foldLeft(1L)((a,b) => lcm(a,b))))
 
 
   //Euclid Algorithm
