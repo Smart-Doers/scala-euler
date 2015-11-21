@@ -14,7 +14,7 @@ object EulerProblem9 extends App {
   def execute() = {
     var result = 0L
     breakable(
-      for (a <- (1 to 1000); b <- (a + 1 to 1000)) {
+      for (a <- 1 to 1000; b <- a + 1 to 1000) {
         val c = 1000 - a - b
         if (isTriplet(a, b, c)) {
           //println(a+" "+b+" "+c)
