@@ -2,6 +2,8 @@ package com.learn.scala.s99.problem4
 
 import com.learn.scala.s99.Utility
 
+import scala.annotation.tailrec
+
 /**
   * Created by grijesh.
   */
@@ -28,6 +30,7 @@ object Length extends App {
   }
 
   def lengthRecursive[T](list: List[T]) = {
+    @tailrec
     def loop(length: Long, internalList: List[T]): Long = internalList match {
       case Nil => 0
       case h :: Nil => length
